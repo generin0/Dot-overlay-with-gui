@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import ttk
-import threading
 import ctypes
 import itertools
 
@@ -124,6 +123,6 @@ btn_show_hide.pack(pady=5)
 btn_exit = ttk.Button(settings_window, text="Exit", command=close_overlay)
 btn_exit.pack(pady=5)
 
-threading.Thread(target=main, daemon=True).start()
-settings_window.mainloop()
 ############################################################################################################# ИНТЕРФЕЙС
+
+main()
